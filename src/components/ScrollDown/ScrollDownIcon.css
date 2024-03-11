@@ -1,0 +1,43 @@
+.scroll-down-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as needed */
+}
+
+.scroll-down-arrow-forward {
+  width: 40px;
+  height: 40px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  animation: scrollDownAnimation 1.5s infinite;
+}
+.scroll-down-arrow-backward {
+  width: 40px;
+  height: 40px;
+  border: solid white;
+  border-width: 0 0 3px 3px;
+  animation: scrollDownAnimation 1.5s infinite;
+}
+
+.scroll-down-arrow-forward {
+  transform: rotate(45deg); /* Rotate by 45 degrees */
+}
+
+.scroll-down-arrow-backward {
+  transform: rotate(-45deg); /* Rotate by -45 degrees */
+}
+
+@keyframes scrollDownAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
