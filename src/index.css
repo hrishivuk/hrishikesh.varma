@@ -135,7 +135,18 @@ body{
 .introScreen{
   height: calc(100vh - 104px);
 }
+.image-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
 
+.image-hover-effect img {
+  transition: transform 0.3s ease;
+}
+
+.image-hover-effect img:hover {
+  transform: scale(1.1);
+}
 
 /* Chrome */
 ::-webkit-scrollbar {

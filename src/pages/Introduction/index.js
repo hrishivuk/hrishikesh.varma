@@ -1,7 +1,7 @@
 import React from 'react'
-import roundImage from "../../assets/images/round2.png";
-import { ScreenFitText } from "../../components/ScreenFitText";
-import ContactForm from '../../components/ContactForm';
+import roundImage from "../../assets/images/round.png";
+import { FaLinkedin, FaPhoneSquareAlt, FaGithubSquare } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Introduction() {
   return (
@@ -22,7 +22,20 @@ function Introduction() {
         Front End Developer | Code Enthusiast
       </h3>
     </div>
-
+    <div className="flex mt-6 gap-3 items-center justify-center">
+          <a href="https://www.linkedin.com/in/hrishivuk/">
+            <FaLinkedin className="text-3xl text-whitePrimary" />
+          </a>
+          <a href="mailto:officialhrishivuk@gmail.com">
+            <MdEmail className="text-4xl text-whitePrimary" />
+          </a>
+          <a href="tel:08078419320">
+            <FaPhoneSquareAlt className="text-3xl text-whitePrimary" />
+          </a>
+          <a href="https://github.com/hrishivuk">
+            <FaGithubSquare className="text-3xl text-whitePrimary" />
+          </a>
+        </div>
     {/* <ScreenFitText /> */}
   </section>
   )

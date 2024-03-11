@@ -51,6 +51,7 @@ export const BouncyCardsFeatures = () => {
                 maxWidth: "600px",
                 maxHeight: "80vh",
                 overflow: "auto",
+                paddingTop:"25px"
               }} // Custom width styles
             >
               <div className="relative">
@@ -58,9 +59,9 @@ export const BouncyCardsFeatures = () => {
                 <div className="mt-4">{selectedContent}</div>
                 <button
                   onClick={closeModal}
-                  className="absolute top-2 right-2 p-2 bg-gray-200 rounded-full text-gray-800"
+                  className="absolute font-bold h-6 w-6 flex justify-center items-center top-2 right-2 p-2 bg-black rounded-full text-white"
                 >
-                  Close
+                  x
                 </button>
               </div>
             </motion.div>
@@ -81,9 +82,14 @@ export const BouncyCardsFeatures = () => {
                   and music control.
                 </p>
                 <div>
-                  <img src={current} alt="current Song" />
-                  <img src={recommended} alt="current Song" />
-                  <img src={playlists} alt="current Song" />
+                  <p className="mt-4 text-xl font-semibold">
+                    Deeper look into its features
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    <img src={current} alt="current Song" />
+                    <img src={recommended} alt="current Song" />
+                    <img src={playlists} alt="current Song" />
+                  </div>
                 </div>
               </div>
             )
@@ -101,9 +107,24 @@ export const BouncyCardsFeatures = () => {
               image1,
               <div className="p-4">
                 <h3 className="text-lg font-semibold">Side Hustles</h3>
-                <p className="text-sm">
-                  Checkout some of the Tshirts that I have designed
+                <p className="text-sm mb-4">
+                  Take a look at some of my T-shirt designs that I have created
+                  using Adobe Photoshop.
                 </p>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+                  <div className="image-hover-effect rounded-md">
+                    <img src={image1} alt="tshirt design" />
+                  </div>
+                  <div className="image-hover-effect rounded-md">
+                    <img src={image2} alt="tshirt design" />
+                  </div>
+                  <div className="image-hover-effect rounded-md">
+                    <img src={image3} alt="tshirt design" />
+                  </div>
+                  <div className="image-hover-effect rounded-md">
+                    <img src={image4} alt="tshirt design" />
+                  </div>
+                </div>
               </div>
             )
           }
@@ -127,11 +148,10 @@ export const BouncyCardsFeatures = () => {
         <BounceCard className="col-span-12 md:col-span-8">
           <CardTitle>Contact Me</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-amber-400 to-orange-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <ContactForm/>
+            <ContactForm />
           </div>
         </BounceCard>
       </div>
-
     </section>
   );
 };

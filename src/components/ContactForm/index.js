@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    lastName: "", // Added lastName field
     email: "",
     message: "",
   });
@@ -25,7 +26,7 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           // Optionally, reset form after successful submission
-          setFormData({ name: "", email: "", message: "" });
+          setFormData({ name: "", lastName: "", email: "", message: "" }); // Reset all fields
         },
         (error) => {
           console.error(error.text);
