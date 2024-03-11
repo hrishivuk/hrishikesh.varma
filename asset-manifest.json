@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/hrishikesh.varma/static/css/main.141f9be7.css",
-    "main.js": "/hrishikesh.varma/static/js/main.acf8d37d.js",
+    "main.css": "/hrishikesh.varma/static/css/main.278c290f.css",
+    "main.js": "/hrishikesh.varma/static/js/main.1075f48d.js",
     "static/js/453.1407b060.chunk.js": "/hrishikesh.varma/static/js/453.1407b060.chunk.js",
+    "static/media/round.png": "/hrishikesh.varma/static/media/round.50f8b6d6ce4e1d041e59.png",
     "static/media/spotifyImg.png": "/hrishikesh.varma/static/media/spotifyImg.9387858fac446359374a.png",
     "static/media/currentSong.png": "/hrishikesh.varma/static/media/currentSong.a79451762c44b212a4d5.png",
     "static/media/resume.jpg": "/hrishikesh.varma/static/media/resume.a5fbe8a141de52749c63.jpg",
@@ -11,16 +12,15 @@
     "static/media/itachi2.jpg": "/hrishikesh.varma/static/media/itachi2.cfde6d78715219047b18.jpg",
     "static/media/playslists.png": "/hrishikesh.varma/static/media/playslists.8441765181c133eb87fb.png",
     "static/media/platinum_oversized2.jpg": "/hrishikesh.varma/static/media/platinum_oversized2.52d8c70c64ef048f1c32.jpg",
-    "static/media/round2.png": "/hrishikesh.varma/static/media/round2.aa6b0836c8f67ad13cd1.png",
     "static/media/rsongs.png": "/hrishikesh.varma/static/media/rsongs.a99e104f5de7536b925a.png",
     "index.html": "/hrishikesh.varma/index.html",
     "static/media/logo2.svg": "/hrishikesh.varma/static/media/logo2.f4c2129026682074f77e216a3cb5e2d3.svg",
-    "main.141f9be7.css.map": "/hrishikesh.varma/static/css/main.141f9be7.css.map",
-    "main.acf8d37d.js.map": "/hrishikesh.varma/static/js/main.acf8d37d.js.map",
+    "main.278c290f.css.map": "/hrishikesh.varma/static/css/main.278c290f.css.map",
+    "main.1075f48d.js.map": "/hrishikesh.varma/static/js/main.1075f48d.js.map",
     "453.1407b060.chunk.js.map": "/hrishikesh.varma/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.141f9be7.css",
-    "static/js/main.acf8d37d.js"
+    "static/css/main.278c290f.css",
+    "static/js/main.1075f48d.js"
   ]
 }
