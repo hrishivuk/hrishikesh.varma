@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 function Introduction() {
   return (
-    <section className="p-14 introScreen">
+    <section className="p-14 introScreen" id='home'>
     {/* Image */}
     <div className="flex justify-center items-center ">
       <img
