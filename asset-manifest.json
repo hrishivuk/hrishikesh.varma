@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hrishikesh.varma/static/css/main.ab9add01.css",
+    "main.js": "/hrishikesh.varma/static/js/main.57433128.js",
+    "static/js/453.1407b060.chunk.js": "/hrishikesh.varma/static/js/453.1407b060.chunk.js",
+    "static/media/spotifyImg.png": "/hrishikesh.varma/static/media/spotifyImg.9387858fac446359374a.png",
+    "static/media/currentSong.png": "/hrishikesh.varma/static/media/currentSong.a79451762c44b212a4d5.png",
+    "static/media/resume.jpg": "/hrishikesh.varma/static/media/resume.a5fbe8a141de52749c63.jpg",
+    "static/media/greek_oversized2.jpg": "/hrishikesh.varma/static/media/greek_oversized2.95699d2a3376850cd491.jpg",
+    "static/media/itachi1.jpg": "/hrishikesh.varma/static/media/itachi1.4f8744667009dc08e0cc.jpg",
+    "static/media/itachi2.jpg": "/hrishikesh.varma/static/media/itachi2.cfde6d78715219047b18.jpg",
+    "static/media/playslists.png": "/hrishikesh.varma/static/media/playslists.8441765181c133eb87fb.png",
+    "static/media/platinum_oversized2.jpg": "/hrishikesh.varma/static/media/platinum_oversized2.52d8c70c64ef048f1c32.jpg",
+    "static/media/round2.png": "/hrishikesh.varma/static/media/round2.aa6b0836c8f67ad13cd1.png",
+    "static/media/rsongs.png": "/hrishikesh.varma/static/media/rsongs.a99e104f5de7536b925a.png",
+    "index.html": "/hrishikesh.varma/index.html",
+    "static/media/logo2.svg": "/hrishikesh.varma/static/media/logo2.f4c2129026682074f77e216a3cb5e2d3.svg",
+    "main.ab9add01.css.map": "/hrishikesh.varma/static/css/main.ab9add01.css.map",
+    "main.57433128.js.map": "/hrishikesh.varma/static/js/main.57433128.js.map",
+    "453.1407b060.chunk.js.map": "/hrishikesh.varma/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab9add01.css",
+    "static/js/main.57433128.js"
+  ]
+}
