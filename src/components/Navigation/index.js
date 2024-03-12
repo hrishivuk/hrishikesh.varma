@@ -10,10 +10,11 @@ function Navigation() {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#works">Works</a>
-          <a href="#resume">Resume</a>
         </div>
       </div>
-      <Button className="bg-whiteSecondary text-blackSecondary">Contact Me</Button>
+      <Button className="bg-whiteSecondary text-blackSecondary">
+        Contact Me
+      </Button>
     </div>
   );
 }

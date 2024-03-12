@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import { FiAlertCircle } from "react-icons/fi";
 import spotifyImg from "../../assets/images/spotifyImg.png";
 import recommended from "../../assets/images/rsongs.png";
 import playlists from "../../assets/images/playslists.png";
@@ -30,7 +29,7 @@ export const BouncyCardsFeatures = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12 text-slate-800">
+    <section className="mx-auto max-w-7xl px-4 py-12 text-slate-800" id="works">
       <AnimatePresence>
         {isOpen && (
           <motion.div
