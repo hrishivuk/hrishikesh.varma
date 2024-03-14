@@ -8,7 +8,7 @@ import Resume from "../Resume";
 
 function Home() {
   return (
-    <div className="flex flex-col w-full bg-blackPrimary px-20 py-5">
+    <div className="flex flex-col w-full bg-blackPrimary px-8 md:px-20 py-5">
       <Navigation />
       {/* Content starts here */}
       <Introduction />

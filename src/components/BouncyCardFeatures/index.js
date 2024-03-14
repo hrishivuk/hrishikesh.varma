@@ -30,7 +30,7 @@ export const BouncyCardsFeatures = () => {
 
   return (
     <section className="max-w-7xl px-4 py-12 text-slate-800 mx-auto w-full" id="works">
-      <h1>Works</h1>
+        <h2 className="resume-heading font-bold text-3xl md:text-5xl mb-4 md:mb-6 text-whitePrimary">Works</h2>
       <AnimatePresence>
         {isOpen && (
           <motion.div

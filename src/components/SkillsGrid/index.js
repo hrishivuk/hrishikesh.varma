@@ -3,50 +3,40 @@ import { useEffect, useRef, useState } from "react";
 
 const SkillsGrid = () => {
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto h-screen" id="about">
+    <section className="w-full px-4 md:px-8 py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8 max-w-7xl mx-auto h-full" id="about">
       <div>
         <div>
-          <h1 className="text-whitePrimary font-bold text-5xl mb-4">
+          <h1 className="text-whitePrimary font-bold text-3xl md:text-5xl mb-2 md:mb-4">
             About Me
           </h1>
           <div className="flex">
-            <div className="flex flex-col gap-5">
-              <p className="text-xl text-whitePrimary">
+            <div className="flex flex-col gap-3">
+              <p className="text-base md:text-xl text-whitePrimary">
                 I'm a passionate Front End Developer based in Kochi. With a keen
                 eye for detail and a love for all things code, I specialize in
-                crafting seamless and captivating Web Apps .
+                crafting seamless and captivating Web Apps.
               </p>
             </div>
           </div>
         </div>
         <div>
-          <h1 className="text-whitePrimary font-bold text-5xl mb-4 mt-16">
-            What do i do?
+          <h1 className="text-whitePrimary font-bold text-3xl md:text-5xl mb-2 md:mb-4 mt-8 md:mt-16">
+            What do I do?
           </h1>
           <div className="flex">
-            <div className="flex flex-col gap-5">
-              <p className="text-xl text-whitePrimary">
+            <div className="flex flex-col gap-3">
+              <p className="text-base md:text-xl text-whitePrimary">
                 👨‍💻 Front End Developer at Experion Technologies, Kerala, India 🔧
               </p>
-              <p className="text-xl text-whitePrimary">
+              <p className="text-base md:text-xl text-whitePrimary">
                 🌴 Specializing in React and Angular 🚀
               </p>
-              <p className="text-xl text-whitePrimary">
+              <p className="text-base md:text-xl text-whitePrimary">
                 🎨 Passionate about graphics design in my free time 🎨
               </p>
             </div>
           </div>
         </div>
-        {/* <div>
-          <h1 className="text-whitePrimary font-bold text-5xl mb-4 mt-16">
-            Skills
-          </h1>
-          <div className="flex flex-col gap-5">
-            <p className="text-xl text-whitePrimary">⚡ HTML,CSS, JS</p>
-            <p className="text-xl text-whitePrimary">⚡React, Angular</p>
-            <p className="text-xl text-whitePrimary">⚡ Tailwind CSS</p>
-          </div>
-        </div> */}
       </div>
       <ShuffleGrid />
     </section>
@@ -69,7 +59,6 @@ const shuffle = (array) => {
 
   return array;
 };
-
 const squareData = [
   {
     id: 1,
@@ -170,10 +159,14 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-4 bg-whitePrimary/40 p-4 rounded-md">
+    <div className="">
+    <div className=" mx-auto grid grid-cols-4 grid-rows-4 h-[250px] md:h-[500px] w-[250px] md:w-[500px] gap-2 md:gap-4 bg-whitePrimary/40 p-2 md:p-4 rounded-md">
       {squares.map((sq) => sq)}
+    </div>
     </div>
   );
 };
 
 export default SkillsGrid;
+
+

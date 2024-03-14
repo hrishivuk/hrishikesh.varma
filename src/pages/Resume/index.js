@@ -3,18 +3,18 @@ import React from "react";
 // Reusable component for each experience item
 const ExperienceItem = ({ company, designation, years, description }) => {
   return (
-    <div className="experience-item flex flex-col gap-1 p-8">
-      <h1 className="company text-2xl font-semibold text-whitePrimary/80">
+    <div className="experience-item flex flex-col gap-1 p-2 md:p-8 md:pt-2">
+      <h1 className="company text-lg md:text-2xl font-semibold text-whitePrimary/80">
         {company}
       </h1>
-      <div className="flex gap-3 items-center justify-between">
-        <p className="designation text-lg font-semibold text-whitePrimary/60">
+      <div className="flex flex-col md:flex-row gap-3 items-start justify-between">
+        <p className="designation text-base md:text-lg font-semibold text-whitePrimary/60">
           {designation}
         </p>
-        <p className="years text-lg">{years}</p>
+        <p className="years text-base md:text-lg">{years}</p>
       </div>
       <div className="description">
-        <p>{description}</p>
+        <p className="text-sm md:text-base">{description}</p>
       </div>
     </div>
   );
@@ -24,22 +24,22 @@ const ExperienceItem = ({ company, designation, years, description }) => {
 const ResumeSection = ({ title, children }) => {
   return (
     <div>
-      <div className="resume-section flex w-full">
-        <h1 className="section-title flex-1 text-3xl font-semibold p-8">{title}</h1>
-        <div className="section-content flex-1 flex items-start flex-col">
+      <div className="resume-section flex flex-col w-full">
+        <h1 className="section-title text-xl md:text-3xl font-semibold py-4 md:p-8 md:pb-2">{title}</h1>
+        <div className="section-content flex-1 flex flex-col">
           {children}
         </div>
       </div>
-      <div className="h-[1px] w-full bg-whitePrimary/25"></div>
+      <div className="h-px w-full bg-whitePrimary/5"></div>
     </div>
   );
 };
 
 const Resume = () => {
   return (
-    <section className="max-w-7xl px-4 py-12 text-whitePrimary mx-auto w-full" id="resume">
+    <section className="max-w-7xl px-4 py-8 md:py-12 text-whitePrimary mx-auto" id="resume">
       <div className="resume">
-        <h2 className="resume-heading font-bold text-5xl mb-6">Resume</h2>
+        <h2 className="resume-heading font-bold text-3xl md:text-5xl mb-4 md:mb-6">Resume</h2>
 
         {/* Example of a Resume Section */}
         <ResumeSection title="Experience">
@@ -49,7 +49,6 @@ const Resume = () => {
             years="May 2023 - Present"
             description="Developed responsive user interfaces using React.js, Angular, Tailwind CSS, and other key front end tools. Translated design concepts into functional components while adhering to industry standards for optimal user experiences."
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
             company="Experion Technologies"
             designation="Intern"
@@ -60,30 +59,12 @@ const Resume = () => {
         </ResumeSection>
         <ResumeSection title="Projects">
           <ExperienceItem
-            company="College Web-App Devolopment Project"
-            description="Framework integration: Engaging in active 
-            discussions and communication with senior 
-            developers, I provided valuable insights into 
-            the implementation of essential frameworks 
-            required for the project.
-            Layout Creation: Leveraging my design skills 
-            and technical proficiency, I played a key role 
-            in creating layouts for the project"
+            company="College Web-App Development Project"
+            description="Framework integration: Engaging in active discussions and communication with senior developers, I provided valuable insights into the implementation of essential frameworks required for the project. Layout Creation: Leveraging my design skills and technical proficiency, I played a key role in creating layouts for the project"
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
-            company="Logisitics Management Project"
-            description="Angular Development: As the project 
-            initiator, I embarked on building the 
-            logistics management application from the 
-            ground up using Angular.
-            
-            Implementation of Tailwind CSS: 
-            Recognizing the importance of sleek and 
-            responsive user interfaces, I integrated 
-            Tailwind CSS into the project to streamline 
-            styling and enhance the visual appeal of the 
-            application"
+            company="Logistics Management Project"
+            description="Angular Development: As the project initiator, I embarked on building the logistics management application from the ground up using Angular. Implementation of Tailwind CSS: Recognizing the importance of sleek and responsive user interfaces, I integrated Tailwind CSS into the project to streamline styling and enhance the visual appeal of the application"
           />
         </ResumeSection>
         <ResumeSection title="Education">
@@ -93,7 +74,6 @@ const Resume = () => {
             years="2018-2022"
             description="Got bachelors in Computer Science and Engineering from Adi Shankara Institute of Engineering and Technology in Kerala, India."
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
             company="The Emirates National School, Sharjah (UAE)"
             designation="High School"

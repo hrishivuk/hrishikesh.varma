@@ -134,7 +134,7 @@ body{
 }
 .introScreen{
   margin-top: 40px;
-  height: calc(100vh - 104px);
+  height: calc(100vh - 100px);
 }
 .image-hover-effect {
   position: relative;
