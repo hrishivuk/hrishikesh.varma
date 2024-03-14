@@ -70,9 +70,9 @@ const Resume = () => {
         <ResumeSection title="Education">
           <ExperienceItem
             company="APJ Abdul Kalam Technological University (Kerala, India)"
-            designation="Bachelors in Computer Science and Engineering"
+            designation="Bachelors of Technology in Computer Science and Engineering"
             years="2018-2022"
-            description="Got bachelors in Computer Science and Engineering from Adi Shankara Institute of Engineering and Technology in Kerala, India."
+            description="Completed Bachelors of Technology in Computer Science and Engineering from Adi Shankara Institute of Engineering and Technology in Kerala, India."
           />
           <ExperienceItem
             company="The Emirates National School, Sharjah (UAE)"
