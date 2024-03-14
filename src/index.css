@@ -133,6 +133,7 @@ body{
   -webkit-text-fill-color: transparent;
 }
 .introScreen{
+  margin-top: 40px;
   height: calc(100vh - 104px);
 }
 .image-hover-effect {

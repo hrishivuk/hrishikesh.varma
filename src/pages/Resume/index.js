@@ -3,7 +3,7 @@ import React from "react";
 // Reusable component for each experience item
 const ExperienceItem = ({ company, designation, years, description }) => {
   return (
-    <div className="experience-item flex flex-col gap-1">
+    <div className="experience-item flex flex-col gap-1 p-8">
       <h1 className="company text-2xl font-semibold text-whitePrimary/80">
         {company}
       </h1>
@@ -24,13 +24,13 @@ const ExperienceItem = ({ company, designation, years, description }) => {
 const ResumeSection = ({ title, children }) => {
   return (
     <div>
-      <div className="resume-section flex w-full mb-6">
-        <h1 className="section-title flex-1 text-3xl font-semibold">{title}</h1>
-        <div className="section-content flex-1 flex items-start flex-col gap-4">
+      <div className="resume-section flex w-full">
+        <h1 className="section-title flex-1 text-3xl font-semibold p-8">{title}</h1>
+        <div className="section-content flex-1 flex items-start flex-col">
           {children}
         </div>
       </div>
-      <div className="h-[1px] w-full bg-whitePrimary/25 my-4"></div>
+      <div className="h-[1px] w-full bg-whitePrimary/25"></div>
     </div>
   );
 };
@@ -49,7 +49,7 @@ const Resume = () => {
             years="May 2023 - Present"
             description="Developed responsive user interfaces using React.js, Angular, Tailwind CSS, and other key front end tools. Translated design concepts into functional components while adhering to industry standards for optimal user experiences."
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25 my-4"></div>
+          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
             company="Experion Technologies"
             designation="Intern"
@@ -70,7 +70,7 @@ const Resume = () => {
             and technical proficiency, I played a key role 
             in creating layouts for the project"
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25 my-4"></div>
+          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
             company="Logisitics Management Project"
             description="Angular Development: As the project 
@@ -93,7 +93,7 @@ const Resume = () => {
             years="2018-2022"
             description="Got bachelors in Computer Science and Engineering from Adi Shankara Institute of Engineering and Technology in Kerala, India."
           />
-          <div className="h-[1px] w-full bg-whitePrimary/25 my-4"></div>
+          <div className="h-[1px] w-full bg-whitePrimary/25"></div>
           <ExperienceItem
             company="The Emirates National School, Sharjah (UAE)"
             designation="High School"
