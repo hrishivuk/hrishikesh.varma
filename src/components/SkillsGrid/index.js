@@ -26,10 +26,10 @@ const SkillsGrid = () => {
           <div className="flex">
             <div className="flex flex-col gap-5">
               <p className="text-xl text-whitePrimary">
-                👨‍💻 Front End Developer at Experion Technologies, Kerala, India
+                👨‍💻 Front End Developer at Experion Technologies, Kerala, India 🔧
               </p>
               <p className="text-xl text-whitePrimary">
-                🌴 🔧 Specializing in React and Angular 🚀
+                🌴 Specializing in React and Angular 🚀
               </p>
               <p className="text-xl text-whitePrimary">
                 🎨 Passionate about graphics design in my free time 🎨

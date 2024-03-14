@@ -4,6 +4,7 @@ import SkillsGrid from "../../components/SkillsGrid";
 import Introduction from "../Introduction";
 import { BouncyCardsFeatures } from "../../components/BouncyCardFeatures";
 import ContactForm from "../../components/ContactForm";
+import Resume from "../Resume";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       {/* Content starts here */}
       <Introduction />
       <SkillsGrid />
+      <Resume/>
       <BouncyCardsFeatures />
       <div className="flex w-full justify-center items-center">
         <ContactForm />

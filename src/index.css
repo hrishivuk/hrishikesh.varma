@@ -187,3 +187,7 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.active{
+  @apply bg-whitePrimary text-blackPrimary rounded-lg;
+}

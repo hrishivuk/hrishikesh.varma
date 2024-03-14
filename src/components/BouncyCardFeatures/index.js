@@ -29,7 +29,7 @@ export const BouncyCardsFeatures = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12 text-slate-800" id="works">
+    <section className="max-w-7xl px-4 py-12 text-slate-800 mx-auto w-full" id="works">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -50,8 +50,8 @@ export const BouncyCardsFeatures = () => {
                 maxWidth: "600px",
                 maxHeight: "80vh",
                 overflow: "auto",
-                paddingTop:"25px"
-              }} // Custom width styles
+                paddingTop: "25px",
+              }} 
             >
               <div className="relative">
                 <img src={selectedImage} alt="Selected" className="w-full" />
@@ -68,89 +68,73 @@ export const BouncyCardsFeatures = () => {
         )}
       </AnimatePresence>
       <div className="mb-4 grid grid-cols-12 gap-4">
-        <BounceCard
-          className="col-span-12 md:col-span-8"
-          onClick={() =>
-            openModal(
-              spotifyImg,
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">Spotify Rework</h3>
-                <p className="text-sm">
-                  Created a new look for spotify with plain HTML CSS JS. Also
-                  implemented working features like recommended songs, playlists
-                  and music control.
-                </p>
-                <div>
-                  <p className="mt-4 text-xl font-semibold">
-                    Deeper look into its features
-                  </p>
-                  <div className="flex flex-col gap-3">
-                    <img src={current} alt="current Song" />
-                    <img src={recommended} alt="current Song" />
-                    <img src={playlists} alt="current Song" />
-                  </div>
-                </div>
-              </div>
-            )
-          }
-        >
-          <CardTitle>Develop WebApps</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-green-400 to-emerald-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <img className="" src={spotifyImg} alt="spotifyJS" />
+  <BounceCard
+    className="col-span-12 md:col-span-6" // Set to 6 columns for medium screens, adjust as needed
+    onClick={() =>
+      openModal(
+        spotifyImg,
+        <div className="p-4">
+          <h3 className="text-lg font-semibold">Spotify Rework</h3>
+          <p className="text-sm">
+            Created a new look for Spotify with plain HTML CSS JS. Also
+            implemented working features like recommended songs, playlists, and
+            music control.
+          </p>
+          <div>
+            <p className="mt-4 text-xl font-semibold">
+              Deeper look into its features
+            </p>
+            <div className="flex flex-col gap-3">
+              <img src={current} alt="current Song" />
+              <img src={recommended} alt="current Song" />
+              <img src={playlists} alt="current Song" />
+            </div>
           </div>
-        </BounceCard>
-        <BounceCard
-          className="col-span-12 md:col-span-4"
-          onClick={() =>
-            openModal(
-              image1,
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">Side Hustles</h3>
-                <p className="text-sm mb-4">
-                  Take a look at some of my T-shirt designs that I have created
-                  using Adobe Photoshop.
-                </p>
-                <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-                  <div className="image-hover-effect rounded-md">
-                    <img src={image1} alt="tshirt design" />
-                  </div>
-                  <div className="image-hover-effect rounded-md">
-                    <img src={image2} alt="tshirt design" />
-                  </div>
-                  <div className="image-hover-effect rounded-md">
-                    <img src={image3} alt="tshirt design" />
-                  </div>
-                  <div className="image-hover-effect rounded-md">
-                    <img src={image4} alt="tshirt design" />
-                  </div>
-                </div>
-              </div>
-            )
-          }
-        >
-          <CardTitle>Side Hustles</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-pink-400 to-red-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <img className="" src={image1} alt="tshirt" />
+        </div>
+      )
+    }
+  >
+    <CardTitle>Develop WebApps</CardTitle>
+    <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-green-400 to-emerald-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+      <img className="" src={spotifyImg} alt="spotifyJS" />
+    </div>
+  </BounceCard>
+  <BounceCard
+    className="col-span-12 md:col-span-6" // Set to 6 columns for medium screens, adjust as needed
+    onClick={() =>
+      openModal(
+        image1,
+        <div className="p-4">
+          <h3 className="text-lg font-semibold">Side Hustles</h3>
+          <p className="text-sm mb-4">
+            Take a look at some of my T-shirt designs that I have created
+            using Adobe Photoshop.
+          </p>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+            <div className="image-hover-effect rounded-md">
+              <img src={image1} alt="tshirt design" />
+            </div>
+            <div className="image-hover-effect rounded-md">
+              <img src={image2} alt="tshirt design" />
+            </div>
+            <div className="image-hover-effect rounded-md">
+              <img src={image3} alt="tshirt design" />
+            </div>
+            <div className="image-hover-effect rounded-md">
+              <img src={image4} alt="tshirt design" />
+            </div>
           </div>
-        </BounceCard>
-      </div>
-      <div className="mb-4 grid grid-cols-12 gap-4">
-        <BounceCard
-          className="col-span-12 md:col-span-4"
-          onClick={() => openModal(resume)}
-        >
-          <CardTitle>Resume</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <img className="" src={resume} alt="resume" />
-          </div>
-        </BounceCard>
-        <BounceCard className="col-span-12 md:col-span-8">
-          <CardTitle>Contact Me</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-amber-400 to-orange-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <ContactForm />
-          </div>
-        </BounceCard>
-      </div>
+        </div>
+      )
+    }
+  >
+    <CardTitle>Side Hustles</CardTitle>
+    <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-pink-400 to-red-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+      <img className="" src={image1} alt="tshirt" />
+    </div>
+  </BounceCard>
+</div>
+
     </section>
   );
 };
