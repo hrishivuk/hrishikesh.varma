@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/hrishikesh.varma/static/css/main.f1637037.css",
-    "main.js": "/hrishikesh.varma/static/js/main.7100b4fb.js",
+    "main.js": "/hrishikesh.varma/static/js/main.642518da.js",
     "static/js/453.1407b060.chunk.js": "/hrishikesh.varma/static/js/453.1407b060.chunk.js",
-    "static/media/round.png": "/hrishikesh.varma/static/media/round.50f8b6d6ce4e1d041e59.png",
+    "static/media/profile.jpg": "/hrishikesh.varma/static/media/profile.98b85e5620a16ac188bf.jpg",
     "static/media/spotifyImg.png": "/hrishikesh.varma/static/media/spotifyImg.9387858fac446359374a.png",
     "static/media/currentSong.png": "/hrishikesh.varma/static/media/currentSong.a79451762c44b212a4d5.png",
     "static/media/resume.jpg": "/hrishikesh.varma/static/media/resume.a5fbe8a141de52749c63.jpg",
@@ -16,11 +16,11 @@
     "index.html": "/hrishikesh.varma/index.html",
     "static/media/logo2.svg": "/hrishikesh.varma/static/media/logo2.f4c2129026682074f77e216a3cb5e2d3.svg",
     "main.f1637037.css.map": "/hrishikesh.varma/static/css/main.f1637037.css.map",
-    "main.7100b4fb.js.map": "/hrishikesh.varma/static/js/main.7100b4fb.js.map",
+    "main.642518da.js.map": "/hrishikesh.varma/static/js/main.642518da.js.map",
     "453.1407b060.chunk.js.map": "/hrishikesh.varma/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1637037.css",
-    "static/js/main.7100b4fb.js"
+    "static/js/main.642518da.js"
   ]
 }
