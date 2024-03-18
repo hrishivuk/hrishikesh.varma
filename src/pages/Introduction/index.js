@@ -1,5 +1,5 @@
 import React from 'react';
-import roundImage from "../../assets/images/round.png";
+import roundImage from "../../assets/images/profile.jpg";
 import { FaLinkedin, FaPhoneSquareAlt, FaGithubSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SocialLink from "../../components/SocialLink";
